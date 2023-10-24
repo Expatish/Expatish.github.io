@@ -16,6 +16,7 @@ const highlightMenu = () => {
   const homeMenu = document.querySelector('#home-page');
   const aboutMenu = document.querySelector('#about-page');
   const servicesMenu = document.querySelector('#services-page');
+  const eventplannerMenu = document.querySelector('#EventPlanner-page');
   let scrollPos = window.scrollY;
   // console.log(scrollPos);
 
@@ -28,10 +29,17 @@ const highlightMenu = () => {
     aboutMenu.classList.add('highlight');
     homeMenu.classList.remove('highlight');
     servicesMenu.classList.remove('highlight');
+    eventplannerMenu.classList.remove('highlight');
+    return;
+  } else if (window.innerWidth > 960 && scrollPos < 1850) {
+    eventplannerMenu.classList.add('highlight');
+    aboutMenu.classList.remove('highlight');
+    servicesMenu.classList.remove('highlight');
     return;
   } else if (window.innerWidth > 960 && scrollPos < 2345) {
     servicesMenu.classList.add('highlight');
     aboutMenu.classList.remove('highlight');
+    eventplannerMenu.classList.remove('highlight');
     return;
   }
 
@@ -54,3 +62,31 @@ const hideMobileMenu = () => {
 
 menuLinks.addEventListener('click', hideMobileMenu);
 navLogo.addEventListener('click', hideMobileMenu);
+
+
+
+// CALENDAR             
+document.addEventListener('DOMContentLoaded', function() {
+  var calendarEl = document.getElementById('calendar');
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+    initialView: 'dayGridMonth'
+  });
+  calendar.render();
+});
+
+function draw(data) {
+  var calendarEl = document.getElementById('calendar');
+  var calendar = new FullCalendar.Calendar(calendarEl,
+    {
+  initialView: 'dayGridMonth',
+  initialDate: '2020-07-07',
+  headerToolbar: {
+  left: 'prev, next today',
+  center: 'title',
+  right: 'dayGridMonth, timeGridWeek, timeGridDay'
+  },
+  events: data
+  });
+
+  calendar.render();
+}

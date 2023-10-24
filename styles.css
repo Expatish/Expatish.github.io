@@ -7,7 +7,17 @@
   }
   
   .navbar {
-    background: #131313;
+    background: #3F4955; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #3F4955,
+      #382A40
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #3F4955,
+      #382A40
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: 80px;
     display: flex;
     justify-content: center;
@@ -30,8 +40,17 @@
   }
   
   #navbar__logo {
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background: #BB9378; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #BB9378,
+      #808080
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #BB9378,
+      #808080
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -41,7 +60,7 @@
     align-items: center;
     cursor: pointer;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 3rem;
   }
   
   .navbar__menu {
@@ -192,8 +211,17 @@
   
   /* Hero Section */
   .hero {
-    background: #000000;
-    background: linear-gradient(to right, #161616, #000000);
+    background: #BB9378; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #BB9378,
+      #3F4955
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #BB9378,
+      #3F4955
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding: 200px 0;
   }
   
@@ -267,7 +295,55 @@
       font-size: 40px;
     }
   }
+
+
+
+
+
+    /* EventPlanner Section */
+    .mainv2 {
+      background-color: #131313;
+      padding: 10rem 0;
+    }
+    
+    .mainv2__container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      height: 90%;
+      z-index: 1;
+      width: 100%;
+      max-width: 1300px;
+      padding: 0 50px;
+    }
+
+    .main__img--cardv2 {
+      margin: 10px;
+      height: 500px;
+      width: 500px;
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: #fff;
+      background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+    }
   
+    .main__img--containerv2 {
+      text-align: center;
+    }
+
+    .main__contentv2 {
+      color: #fff;
+      width: 500%;
+    }
+
+    
+
+
+
   /* About Section */
   .main {
     background-color: #131313;
@@ -411,8 +487,24 @@
       margin: 0 auto;
       height: 90%;
     }
+
+    .mainv2__container {
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      height: 90%;
+      width: 100%;
+    }
+
   
     .main__img--container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .main__img--containerv2 {
       display: flex;
       justify-content: center;
     }
@@ -425,6 +517,13 @@
     .main__content {
       text-align: center;
       margin-bottom: 4rem;
+    }
+
+    .main__contentv2 {
+      text-align: center;
+      margin-bottom: 4rem;
+      color: #fff;
+      width: 500%;
     }
   
     .main__content h1 {
@@ -446,6 +545,11 @@
     .main__img--card {
       width: 250px;
       height: 250px;
+    }
+
+    .main__img--cardv2 {
+      height: 250px;
+      width: 250px;
     }
   
     .fa-users,
@@ -473,7 +577,18 @@
   
   /* Services Section */
   .services {
-    background: #131313;
+    background: #BB9378; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #BB9378,
+      #3F4955
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #BB9378,
+      #3F4955
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background: #131313; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -496,7 +611,7 @@
   
   .services__wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
   }
   
@@ -589,7 +704,17 @@
   
   /* Footer CSS */
   .footer__container {
-    background-color: #131313;
+    background: #BB9378; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #BB9378,
+      #3F4955
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #BB9378,
+      #3F4955
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding: 5rem 0;
     display: flex;
     flex-direction: column;
@@ -703,3 +828,15 @@
       width: 100%;
     }
   }
+
+
+
+
+
+
+
+
+
+
+
+  /* CALENDAR                                        */
