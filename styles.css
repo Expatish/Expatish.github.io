@@ -165,7 +165,7 @@
   
     #navbar__logo {
       /* padding-left: 25px; */
-      margin: -35px auto;
+      margin: -35px 0;
     }
   
     .navbar__toggle .bar {
