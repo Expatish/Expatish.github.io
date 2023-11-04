@@ -38,7 +38,26 @@
     margin: 0 auto;
     padding: 0 50px;
   }
-  
+
+
+  .logo-div{
+    display: flex;
+    justify-content: space-between;
+    height: 0px;
+    z-index: 0;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+
+  .img-logo{
+    display: block;
+    margin-left: 10px;
+    width: 200px;
+    height: 200px;
+  }
+
   #navbar__logo {
     background: #BB9378; /* fallback for old browsers */
     background: -webkit-linear-gradient(
@@ -52,15 +71,20 @@
       #808080
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    display: flex;
-    align-items: center;
+    /* -webkit-background-clip: text; */
+    /* -moz-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
+    /* -moz-text-fill-color: transparent; */
+    display: block;
+    /* align-items: center; */
     cursor: pointer;
-    text-decoration: none;
-    font-size: 3rem;
+    /* text-decoration: none; */
+    /* font-size: 3rem; */
+    width: 150px;
+    height: 150px;
+    margin-top: -35px;  /* THIS IS FOR POS */
+    margin-left: -350px;
+    background-image: url(img/Logo.png);
   }
   
   .navbar__menu {
